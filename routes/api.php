@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/mail', [\App\Http\Controllers\MailController::class, 'sendEmail']);
+Route::post('/file', [\App\Http\Controllers\MailTestController::class, 'sendEmail']);
